@@ -28,7 +28,9 @@ main() {
 
 	for (int i = 0; i < 20; i++) {
 		if (lens[i] > 0) {
-			printf("%i >", i);
+            if (i < 10) printf("%i  >", i);
+            else  printf("%i >", i);
+			
 			for (int j = 0; j < lens[i]; j++) {
 				printf("%s", "|");
 			}
